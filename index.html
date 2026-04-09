@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bisfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ── NAVIGATION ── -->
+    <header class="site-header">
+      <nav class="nav" aria-label="Main navigation">
+        <a class="nav__logo" href="#hero">MYPORTFOLIO.</a>
+        <button
+          class="nav__toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ── HERO ── -->
+      <section class="hero" id="hero">
+        <div class="hero__bg-text" aria-hidden="true">CREATIVE</div>
+        <div class="hero__content">
+          <p class="hero__eyebrow">Hello, I'm</p>
+          <h1 class="hero__name">Bismark<br /><em>Adjei</em></h1>
+          <p class="hero__tagline">
+            Software developer/designer &amp; Q.A engineer crafting digital
+            experiences that feel inevitable.
+          </p>
+          <a href="#projects" class="btn btn--primary">View My Work</a>
+          <a href="#contact" class="btn btn--ghost">Get In Touch</a>
+        </div>
+        <div class="hero__scroll-hint" aria-hidden="true">
+          <span>scroll</span>
+          <div class="hero__scroll-line"></div>
+        </div>
+      </section>
+
+      <!-- ── ABOUT ── -->
+      <section class="about section" id="about">
+        <div class="container about__grid">
+          <div class="about__label section-label">About Me</div>
+          <div class="about__body">
+            <h2 class="about__heading">
+              I build things<br /><em>people love to use.</em>
+            </h2>
+            <p>
+              I am a software developer driven by a fusion of technical rigor
+              and entrepreneurial energy. My approach to building systems is
+              rooted in an analytical mindset, where I apply the principles of
+              engineering and mathematical logic to ensure every solution is
+              structurally sound. I pride myself on a sharp attention to
+              detail—the kind that allows me to catch subtle errors in complex
+              logic and optimize for marginal gains. For me, development isn't
+              just about writing functional code; it’s about a commitment to
+              precision and the constant pursuit of more efficient, scalable
+              ways to solve problems.
+            </p>
+            <p>
+              Beyond the technical stack, I view myself as a versatile builder
+              who understands the intersection of software, hardware, and
+              business strategy. I am deeply committed to continuous growth,
+              whether I'm mastering a new language to expand my global
+              perspective or refining my habits to boost my daily productivity.
+              Whether I am collaborating with a team to dismantle a complex
+              problem or building a new venture from the ground up, I bring a
+              disciplined, adaptive, and highly focused energy to everything I
+              create.
+            </p>
+            <div class="about__stats">
+              <div class="stat">
+                <span class="stat__num">5+</span
+                ><span class="stat__label">Years Experience</span>
+              </div>
+              <div class="stat">
+                <span class="stat__num">40+</span
+                ><span class="stat__label">Projects Shipped</span>
+              </div>
+              <div class="stat">
+                <span class="stat__num">12</span
+                ><span class="stat__label">Happy Clients</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── PROJECTS ── -->
+      <section class="projects section" id="projects">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Selected Work</span>
+            <h2>Projects that<br /><em>speak for themselves.</em></h2>
+          </div>
+          <div class="projects__grid">
+            <article class="project-card">
+              <div class="project-card__num" aria-hidden="true">01</div>
+              <div class="project-card__body">
+                <span class="project-card__tag">UX / React</span>
+                <h3 class="project-card__title">Velo Dashboard</h3>
+                <p class="project-card__desc">
+                  A real-time analytics platform for logistics teams. Reduced
+                  decision latency by 40% through smart data visualisation and a
+                  streamlined information hierarchy.
+                </p>
+                <div class="project-card__links">
+                  <a
+                    href="#"
+                    class="link-arrow"
+                    aria-label="View Velo Dashboard live"
+                    >Live ↗</a
+                  >
+                  <a
+                    href="#"
+                    class="link-arrow"
+                    aria-label="View Velo Dashboard on GitHub"
+                    >GitHub ↗</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card project-card--accent">
+              <div class="project-card__num" aria-hidden="true">02</div>
+              <div class="project-card__body">
+                <span class="project-card__tag">Mobile / iOS</span>
+                <h3 class="project-card__title">Bloom Finance</h3>
+                <p class="project-card__desc">
+                  A personal budgeting app that makes money management feel
+                  human. Grew to 8,000 active users in three months post-launch
+                  with a 4.8 ★ App Store rating.
+                </p>
+                <div class="project-card__links">
+                  <a href="#" class="link-arrow">App Store ↗</a>
+                  <a href="#" class="link-arrow">Case Study ↗</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__num" aria-hidden="true">03</div>
+              <div class="project-card__body">
+                <span class="project-card__tag">Web / Node.js</span>
+                <h3 class="project-card__title">Strata CMS</h3>
+                <p class="project-card__desc">
+                  A headless content management system built for editorial
+                  teams. Ships with a live-preview editor, role-based
+                  permissions, and a GraphQL API out of the box.
+                </p>
+                <div class="project-card__links">
+                  <a href="#" class="link-arrow">Docs ↗</a>
+                  <a href="#" class="link-arrow">GitHub ↗</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__num" aria-hidden="true">04</div>
+              <div class="project-card__body">
+                <span class="project-card__tag">Design System</span>
+                <h3 class="project-card__title">Forma UI Kit</h3>
+                <p class="project-card__desc">
+                  An open-source Figma &amp; CSS component library used by 200+
+                  designers worldwide. Built with accessibility and dark-mode
+                  support baked in from day one.
+                </p>
+                <div class="project-card__links">
+                  <a href="#" class="link-arrow">Figma ↗</a>
+                  <a href="#" class="link-arrow">npm ↗</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── SKILLS ── -->
+      <section class="skills section" id="skills">
+        <div class="container skills__grid">
+          <div class="section-header">
+            <span class="section-label">Toolkit</span>
+            <h2>What I<br /><em>work with.</em></h2>
+          </div>
+          <div class="skills__categories">
+            <div class="skill-group">
+              <h3 class="skill-group__title">Design</h3>
+              <ul class="skill-group__list">
+                <li>Figma</li>
+                <li>Sketch</li>
+                <li>Adobe Illustrator</li>
+                <li>Prototyping &amp; Wireframing</li>
+                <li>Design Systems</li>
+                <li>Accessibility (WCAG)</li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group__title">Development</h3>
+              <ul class="skill-group__list">
+                <li>HTML5 &amp; CSS3</li>
+                <li>JavaScript (ES2022+)</li>
+                <li>React &amp; Next.js</li>
+                <li>Node.js &amp; Express</li>
+                <li>GraphQL &amp; REST APIs</li>
+                <li>Git &amp; GitHub</li>
+              </ul>
+            </div>
+
+            <div class="skill-group">
+              <h3 class="skill-group__title">Process</h3>
+              <ul class="skill-group__list">
+                <li>User Research</li>
+                <li>Agile / Scrum</li>
+                <li>A/B Testing</li>
+                <li>Performance Optimisation</li>
+                <li>Technical Writing</li>
+                <li>Mentoring &amp; Code Review</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── CONTACT ── -->
+      <section class="contact section" id="contact">
+        <div class="container contact__inner">
+          <span class="section-label">Contact</span>
+          <h2>Let's build<br /><em>something great.</em></h2>
+          <p class="contact__sub">
+            I'm open to freelance projects, full-time roles, and interesting
+            conversations. My inbox is always open.
+          </p>
+          <a href="mailto:adjeib1590@gmail.com" class="btn btn--primary"
+            >adjeib1590@gmail.com</a
+          >
+          <div class="contact__socials">
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+              >GitHub</a
+            >
+            <span aria-hidden="true">·</span>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              >LinkedIn</a
+            >
+            <span aria-hidden="true">·</span>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter/X"
+              >Twitter</a
+            >
+            <span aria-hidden="true">·</span>
+            <a
+              href="https://dribbble.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Dribbble"
+              >Dribbble</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ── FOOTER ── -->
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <span>© 2026 Alex Mercer. All rights reserved.</span>
+        <div class="site-footer__links">
+          <a
+            href="https://github.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+            >GH</a
+          >
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            >LI</a
+          >
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+            >TW</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
